@@ -20,6 +20,7 @@ interface Announcement {
   documents?: string[];
 }
 
+
 const AnnouncementSkeleton = () => (
   <div style={styles.announcementCard} className="skeleton-card">
     <div style={styles.cardHeader}>
