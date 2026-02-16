@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+    background-color: #f5f7fa;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      transform: translateX(-100%);
+      width: 260px !important;
+    }
+  
+    .sidebar-open {
+      transform: translateX(0);
+    }
+  
+    .close-mobile-button {
+      display: block;
+    }
+  }
+  
+  
